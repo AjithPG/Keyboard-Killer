@@ -5,8 +5,24 @@
   <meta charset="utf-8">
   <title>Typing Speed</title>
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  @media only screen and (max-width: 600px) {
+  .test-wrapper{
+    text-align: center;
+    padding: 5px;
+  }
+  #test-area {
+
+    width:90vw;
+
+  }
+  }
+
+  </style>
   <script type="text/javascript" async src="script.js">
 
   </script>
@@ -23,11 +39,14 @@
       </p>
     </article>
     <section class="test-area">
+      <p class="info">
+        Type this text
+      </p>
       <div id="origin-text">
         <p>The text to test</p>
       </div>
       <div class="test-wrapper">
-        <textarea id="test-area" name="textarea" rows="6" cols="80"></textarea>
+        <textarea id="test-area" name="textarea" ></textarea>
       </div>
       <div class="meta">
         <section id="clock">
@@ -39,7 +58,7 @@
       </div>
     </section>
   </main>
-  <footer>	&copy<a href="https://www.linkedin.com/in/ajith-pg/">Ajith PG</a>
+  <footer> &copy<a href="https://www.linkedin.com/in/ajith-pg/">Ajith PG</a>
   </footer>
 </body>
 
