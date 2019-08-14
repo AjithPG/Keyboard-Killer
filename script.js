@@ -27,7 +27,7 @@ function runTime() {
       //Start function
       function start() {
         let textExtendLength = testArea.value.length;
-        if (textExtendLength === 0 && !timerRunning) {
+        if (textExtendLength === 1 && !timerRunning) {
           timerRunning=true;
           interval= setInterval(runTime, 10);
         }
@@ -61,4 +61,4 @@ function runTime() {
 
       }
       //EventListners
-      testArea.addEventListener("keypress", start, false); testArea.addEventListener("keyup", spellCheck, false); resetbtn.addEventListener("click", reset, false);
+      testArea.addEventListener("keyup", start, false); testArea.addEventListener("keyup", spellCheck, false); resetbtn.addEventListener("click", reset, false);
